@@ -41,7 +41,7 @@ const Text = styled.div`
 
   font-size: ${props => (props.size && props.size) || '16px'};
   font-weight: ${props => (props.weight && props.weight) || ''};
-  color: ${props => (props.color && props.color) || '#9D9FB0'};
+  color: ${props => (props.color && props.color) || '#000000'};
 
   overflow: hidden;
 

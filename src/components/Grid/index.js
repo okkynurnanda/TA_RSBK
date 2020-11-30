@@ -7,6 +7,9 @@ import GridContainer from './styled';
 
 import Constants from '../../utils/Constants';
 
+import Cardinfo from '../../components/Cardinfo/Cardinfo';
+import Heading from '../../components/Heading/Heading';
+
 function Grid({ items }) {
   return (
     <GridContainer>
@@ -22,6 +25,7 @@ function Grid({ items }) {
           />
         );
       })}
+       <Cardinfo /> 
     </GridContainer>
   );
 }

@@ -33,10 +33,10 @@ function SideBar({ handler }) {
                 });
               }}>
               <ItemActiveTick bg={toggleStatus[i] && '#3CE7F5'} />
-              <ItemIcon color={(toggleStatus[i] && '#A1A3B2') || undefined}>
+              <ItemIcon color={(toggleStatus[i] && '#000000') || undefined}>
                 {val.icon}
               </ItemIcon>
-              <ItemText color={(toggleStatus[i] && '#A1A3B2') || undefined}>
+              <ItemText color={(toggleStatus[i] && '#000000') || undefined}>
                 {val.text}
               </ItemText>
             </ItemContainer>

@@ -7,7 +7,7 @@ const SideBarTitle = styled.div`
   margin: 24px 0;
 
   font-weight: bolder;
-  color: #9798aa;
+  color: #000000;
 `;
 
 const SideBarItem = styled.div`

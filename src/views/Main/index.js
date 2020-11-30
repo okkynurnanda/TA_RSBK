@@ -16,12 +16,15 @@ import {
   SearchBarSection
 } from './styled';
 
+import Clock from "../../components/Clock";
+
 Constants.FuseOptions.keys = ['title'];
 
 function Main() {
   const [movies, setMovies] = useState({});
   const [movieType, setMovieType] = useState();
 
+  
   useEffect(() => {
     try {
       (async () => {
@@ -62,19 +65,29 @@ function Main() {
   });
 
   return (
-    <RootContainer>
+    
+    <RootContainer>    
+         <center><Clock/></center>
       <SideBarSection>
-        <SideBar handler={fetch} />
+         <SideBar handler={fetch} />
       </SideBarSection>
       <ContentSection>
         <SearchBarSection>
+        
           <Search handler={e => search(e.target.value)} value={searchTerm} />
         </SearchBarSection>
         <MoviesGridSection>
           <MoviesGrid items={results} />
         </MoviesGridSection>
+    
       </ContentSection>
+     
     </RootContainer>
+    
+    
+       
+  
+    
   );
 }
 

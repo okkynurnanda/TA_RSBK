@@ -14,7 +14,7 @@ const SearchIcon = styled.div`
   height: 24px;
   width: 24px;
 
-  color: #9d9fb0;
+  color: #000000;
 
   font-size: 14px;
   font-weight: bolder;
@@ -32,7 +32,7 @@ const SearchInput = styled.input`
 
   border: none;
   background-color: transparent;
-  color: #9d9fb0;
+  color: #000000;
 
   font-size: 14px;
   font-weight: bolder;
